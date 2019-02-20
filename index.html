@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header_left">
+            <h3>服务数据</h3>
+        </div>
+        <h2>某某市某某厅办税渠道运行状态监控平台</h2>
+        <div class="header_right">
+            <h3>业务数据</h3>
+        </div>
+    </header>
+    <!-- 当前大厅等候办理人数 -->
+    <div class="sec_one">
+        <div class="sec_one_left">
+            <h3>各业务平均办理时间/分钟</h3>
+            <ul>
+                <li>
+                    <img src="img/img2.png" alt="">
+                    <h4>2.5</h4>
+                    <p>综合业务</p>
+                </li>
+                <li>
+                    <img src="img/img2.png" alt="">
+                    <h4>3.5</h4>
+                    <p>代开业务</p>
+                </li>
+                <li>
+                    <img src="img/img2.png" alt="">
+                    <h4>4.0</h4>
+                    <p>发售业务</p>
+                </li>
+                <li>
+                    <img src="img/img2.png" alt="">
+                    <h4>3.0</h4>
+                    <p>认证业务</p>
+                </li>
+            </ul>
+        </div>
+        <div class="sec_one_middle">
+            <h3>当前大厅等候办理人数</h3>
+            <div class="middle_bottom">
+                <ul>
+                    <li>
+                        <h4>35</h4>
+                        <p>综合业务</p>
+                    </li>
+                    <li>
+                        <h4>20</h4>
+                        <p>代开业务</p>
+                    </li>
+                    <li>
+                        <h4>40</h4>
+                        <p>发售业务</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <span>4</span>
+                    </li>
+                    <li>
+                        <span>9</span>  
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>35</h4>
+                        <p>综合业务</p>
+                    </li>
+                    <li>
+                        <h4>20</h4>
+                        <p>代开业务</p>
+                    </li>
+                    <li>
+                        <h4>40</h4>
+                        <p>发售业务</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec_one_left">
+            <h3 class="right_tit">户管情况统计/户</h3>
+            <ul>
+                <li>
+                    <img src="img/img2.png" alt="">
+                    <h4>2.5</h4>
+                    <p>综合业务</p>
+                </li>
+                <li>
+                    <img src="img/img2.png" alt="">
+                    <h4>3.5</h4>
+                    <p>代开业务</p>
+                </li>
+                <li>
+                    <img src="img/img2.png" alt="">
+                    <h4>4.0</h4>
+                    <p>发售业务</p>
+                </li>
+                <li>
+                    <img src="img/img2.png" alt="">
+                    <h4>3.0</h4>
+                    <p>认证业务</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 中部大图表 -->
+    <section>
+        <div class="section_left">
+            <div class="section_left_con">
+                <div class="left_con_one">
+                    <h4 class="title">各办税渠道使用情况</h4>
+                    <ul>
+                        <li>自助办税终端当前业务办理人数:<i>80人</i></li>
+                        <li>移动手机端当前在线人数:<i>120人</i></li>
+                        <li>网上办税服务厅当前在线人数:<i>70人</i></li>
+                    </ul>
+                </div>
+                <div class="left_con_two">
+                    <h4 class="title">接待情况</h4>
+                    <div class="two_bottom">
+                        <div id="myChart1" style="height: 100%"></div>
+                    </div>
+                </div>
+                <div class="left_con_three">
+                    <h4 class="three_title">当日纳税人咨询最热问题 TOP5</h4>
+                    <ul>
+                        <li>
+                            <span>1</span>如何代开发票?<a href="#">了解详情</a>
+                        </li>
+                        <li>
+                            <span>2</span>最热问题咨询最热问题咨询...<a href="#">了解详情</a>
+                        </li>
+                        <li>
+                            <span>3</span>最热问题咨询最热问题咨询...<a href="#">了解详情</a>
+                        </li>
+                        <li>
+                            <span>4</span>最热问题咨询最热问题咨询...<a href="#">了解详情</a>
+                        </li>
+                        <li>
+                            <span>5</span>最热问题咨询最热问题咨询...<a href="#">了解详情</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section_middle">
+            <div class="section_middle_con">
+                <div class="middle_top">
+                    <h3>业务办理实时监控汇总</h3>
+                    <div class="middle_top_chart">
+                        <div class="chart_left">
+                            <div class="chart_left_con">
+                                <div class="today">
+                                    <h4>今日累计业务办理量</h4>
+                                    <ul>
+                                        <li><p>发票代开</p>20</li>
+                                        <li><p>发票发售</p>40</li>
+                                        <li><p>纳税申报</p>32</li>
+                                        <li><p>发票验旧</p>12</li>
+                                        <li><p>发票认证</p>10</li>
+                                        <li><p>综合业务</p>35</li>
+                                    </ul>
+                                </div>
+                                <div class="today">
+                                    <h4>今日累计业务办理量</h4>
+                                    <ul>
+                                        <li><p>发票代开</p>98</li>
+                                        <li><p>发票发售</p>180</li>
+                                        <li><p>纳税申报</p>45</li>
+                                        <li><p>发票验旧</p>50</li>
+                                        <li><p>发票认证</p>36</li>
+                                        <li><p>综合业务</p>128</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart_right">
+                            <div class="chart_right_con">
+                                <div class="today_chart">
+                                    <!-- <img src="img/img6.png" alt=""> -->
+                                    <div id="myChart2" style="height: 100%"></div>
+                                </div>
+                                <div class="today_chart">
+                                    <!-- <img src="img/img6.png" alt=""> -->
+                                    <div id="myChart3" style="height: 100%"></div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle_bottom">
+                    <div class="middle_bottom_left">
+                        <div class="bottom_left_con">
+                            <h4>当日各时段大厅人流量曲线图</h4>
+                            <div class="bottom_left_char">
+                                <div id="myChart4" style="height: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle_bottom_right">
+                        <div class="bottom_right_con">
+                            <h4>当月大厅人流量变化走势图</h4>
+                            <div class="bottom_left_char">
+                                <div id="myChart5" style="height: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_right">
+            <div class="section_right_con">
+                <div class="right_con_one">
+                    <h4 class="three_title">区域收入情况</h4>
+                    <ul class="con_bottom_chart">
+                        <li>
+                            <div class="first_li">
+                                <div class="sheng">
+                                    <p>省级以上</p>
+                                    <h3>442户</h3>
+                                </div>
+                                <div class="sheng">
+                                    <p>市级以上</p>
+                                    <h3>622户</h3>
+                                </div>
+                                <h4>重点税源户数</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="second_li">
+                                <div class="second_chart">
+                                    <div id="myChart6" style="height: 100%"></div>
+                                </div>
+                                <h4>重点税源税收</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="third_li">
+                                <div class="second_chart">
+                                    <div id="myChart7" style="height: 100%"></div>
+                                </div>
+                                <h4>税收占比</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_con_two">
+                    <h4 class="three_title">区域收入情况</h4>
+                    <div class="two_con_char">
+                        <div id="myChart8" style="height: 100%"></div>
+                    </div>
+                </div>
+                <div class="left_con_three">
+                    <h4 class="three_title">风险提醒</h4>
+                    <ul>
+                        <li>
+                            <span>1</span>风险存在问题项一...<a href="#">了解详情</a>
+                        </li>
+                        <li>
+                            <span>2</span>风险存在问题项二...<a href="#">了解详情</a>
+                        </li>
+                        <li>
+                            <span>3</span>风险存在问题项三...<a href="#">了解详情</a>
+                        </li>
+                        <li>
+                            <span>4</span>风险存在问题项四...<a href="#">了解详情</a>
+                        </li>
+                        <li>
+                            <span>5</span>风险存在问题项五...<a href="#">了解详情</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 尾部 --> 
+    <footer>
+        <div class="foot_left">
+            <div class="foot_left_one">
+                <img src="img/rightimg.png" alt="">
+            </div>
+            <div class="foot_left_two">
+                <a href="#">
+                    <img src="img/home.png" alt="">
+                    <span>首  页</span> 
+                </a>
+            </div>
+            <div class="foot_left_three">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="foot_left_four">
+                <h3>当前时间</h3>
+                <p>2018年1月9日 星期二 12:00</p>
+            </div>
+        </div>
+        <div class="foot_middle">
+            <div class="foot_middle_con">
+                <img src="img/qiuimg.png" alt="">
+                <h2>版权所有:某某软件集团有限公司</h2>
+                <img src="img/qiu2img.png" alt="">
+            </div>
+        </div>
+        <div class="foot_right">
+            <div class="foot_left_four">
+                <h3>当前大厅</h3>
+                <p>某某市某某区某某办税服务大厅</p>
+            </div>
+            <div class="foot_left_three">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="foot_left_two">
+                <a href="#">
+                    <img src="img/back.png" alt="">
+                    <span>返  回</span> 
+                </a>
+            </div>
+            <div class="foot_left_one">
+                <img src="img/leftimg.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="js/myChart1.js"></script>
+<script src="js/mychart2.js"></script>
+<script src="js/mychart3.js"></script>
+<script src="js/mychart4.js"></script>
+<script src="js/mychart5.js"></script>
+<script src="js/mychart6.js"></script>
+<script src="js/mychart7.js"></script>
+<script src="js/mychart8.js"></script>
